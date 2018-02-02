@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './third-party/font-awesome/css/fontawesome.min.css';
 
 import Home from './Home';
 import Mouse_List from './pages/mouse/Mouse_List';
