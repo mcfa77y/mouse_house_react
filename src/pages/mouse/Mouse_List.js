@@ -9,6 +9,8 @@ import {
   OverlayTrigger
 } from 'react-bootstrap';
 import FontAwesome from 'react-fontawesome';
+import Crud_Buttons from './pages/partials/Crud_Buttons';
+
 class Mouse_List extends Component {
   render() {
     return (
@@ -51,13 +53,13 @@ class Mouse_List extends Component {
                 data-toggle="modal"
                 data-target="#set-mice-status-modal"
               >
-                <FontAwesome name="meh" size="2x" aria-hidden="true" />
+                <FontAwesome name="meh-o" size="2x" aria-hidden="true" />
               </Button>
             </OverlayTrigger>
           </Col>
-          <Col md={6}>crud_buttons</Col>
+          <Col md={6}>{Crud_Buttons}</Col>
         </Row>
-        mouse/mouse_cage_modal mouse/mouse_status_modal
+        mouse/mouse_cage_modal<br />mouse/mouse_status_modal<br />
         common/delete_confirmation_modal
       </Well>
     );
