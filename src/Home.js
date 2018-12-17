@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
-class Home extends Component {
-    render() {
-        return <div>
-            <h2>Home!@</h2>
-        </div>
-    }
+import React from 'react';
+import PropTypes from 'prop-types';
+
+function Home(props) {
+  return <h2>Home!@ React {props.version || 16} Documentation</h2>;
 }
 
-export default Home
+Home.propTypes = {
+  version: PropTypes.number
+};
+
+export default Home;

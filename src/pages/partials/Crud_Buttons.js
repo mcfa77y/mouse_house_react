@@ -1,14 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Button,
-  Well,
-  PageHeader,
-  Row,
-  Col,
-  Tooltip,
-  OverlayTrigger,
-  ButtonToolbar
-} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import FontAwesome from 'react-fontawesome';
 
 class Crud_Buttons extends Component {
@@ -35,7 +26,7 @@ class Crud_Buttons extends Component {
           data-placement="top"
           title="Delete {{model_name}}"
         >
-          <button
+          <Button
             id="open-delete-{{model_name}}-modal-button"
             type="button"
             class="btn btn-danger btn-fab"
@@ -43,7 +34,7 @@ class Crud_Buttons extends Component {
             data-target="#confirm-delete-modal"
           >
             <i class="material-icons">delete</i>
-          </button>
+          </Button>
         </span>
       </div>
     );
